@@ -1,6 +1,7 @@
 # GGDR - Generator-Guided Regularization for Discriminator (Official PyTorch Implementation)
 **[Generator Knows What Discriminator Should Learn in Unconditional GANs (ECCV 2022)]()** \
 Gayoung Lee<sup>1</sup>, Hyunsu Kim<sup>1</sup>, Junho Kim<sup>1</sup>, Seonghyeon Kim<sup>2</sup>, Jung-Woo Ha<sup>1</sup>, Yunjey Choi<sup>1</sup>
+
 <sup>1</sup>NAVER AI Lab, <sup>2</sup>NAVER CLOVA
 
 <div align="center">
