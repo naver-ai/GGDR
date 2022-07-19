@@ -5,7 +5,7 @@ Gayoung Lee<sup>1</sup>, Hyunsu Kim<sup>1</sup>, Junho Kim<sup>1</sup>, Seonghye
 <sup>1</sup>NAVER AI Lab, <sup>2</sup>NAVER CLOVA
 
 <div align="center">
-  <img src="model.png" width="70%" height="70%">
+  <img src="figures/model.png" width="70%" height="70%">
 </div>
 
 > **Abstract** *Recent conditional image generation methods benefit from dense supervision such as segmentation label maps to achieve high-fidelity. However, it is rarely explored to employ dense supervision for unconditional image generation. Here we explore the efficacy of dense supervision in unconditional generation and find generator feature maps can be an alternative of cost-expensive semantic label maps. From our empirical evidences, we propose a new **generator-guided discriminator regularization (GGDR)** in which the generator feature maps supervise the discriminator to have rich semantic representations in unconditional generation. In specific, we employ an encoder-decoder architecture for discriminator, which is trained to reconstruct the generator feature maps given fake images as inputs. Extensive experiments on mulitple datasets show that our GGDR consistently improves the performance of baseline methods in terms of quantitative and qualitative aspects. Code will be publicly available for the research community.*
