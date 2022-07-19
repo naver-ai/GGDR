@@ -150,13 +150,13 @@ class StyleGAN2GGDRLoss(Loss):
             with torch.autograd.profiler.record_function(name + '_backward'):
                 (loss_Dreal + loss_Dr1 + real_logits * 0 + loss_not_used * 0).mean().mul(gain).backward()
 
-    def normalized_l2(self, x, y):
+    def cosine_distance(self, x, y):
         return 1. - F.cosine_similarity(x, y).mean()
 
     def get_ggdr_reg(self, ggdr_resolutions, source, target):
         loss_gen_recon = 0
 
         for res in ggdr_resolutions:
-            loss_gen_recon += 10 * self.normalized_l2(source[res], target[res]) / len(ggdr_resolutions)
+            loss_gen_recon += 10 * self.cosine_distance(source[res], target[res]) / len(ggdr_resolutions)
 
         return loss_gen_recon

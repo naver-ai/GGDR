@@ -143,13 +143,8 @@ class Discriminator(torch.nn.Module):
             if res != self.dec_resolutions[0]:
                 in_channels *= 2
 
-            if res != self.dec_resolutions[-1]:
-                act = 'lrelu'
-            else:
-                act = 'linear'
-
             block = Conv2dLayer(in_channels, out_channels, kernel_size=dec_kernel_size,
-                                activation=act, up=2)
+                                activation='linear', up=2)
             setattr(self, f'b{res}_dec', block)
 
     def forward(self, img, c, **block_kwargs):
