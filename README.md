@@ -31,6 +31,19 @@ Belows are some additional arguments can be customized.
 > python generate.py --outdir=out --seeds=100-200 --network=PATH_TO_MODEL
 ```
 
+## Results
+### Selective samples in the paper
+<div align="left">
+  <img src="figures/sample.png" width="70%" height="70%">
+</div>
+
+### Discriminator feature map visualization
+<div align="left">
+  <img src="figures/d_vis.png" width="70%" height="70%">
+</div>
+
+
+
 ## License
 Licensed under NVIDIA Source Code License for StyleGAN2 with Adaptive Discriminator Augmentation (ADA).
 
